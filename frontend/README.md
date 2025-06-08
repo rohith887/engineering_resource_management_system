@@ -1,70 +1,173 @@
-# Getting Started with Create React App
+# 🎯 Engineering Resource Management System (ERMS)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, full-stack web application to manage engineers, projects, and assignments effectively, with role-based access, dashboards, and intelligent capacity tracking.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📋 Overview
 
-### `npm start`
+The **Engineering Resource Management System (ERMS)** is built to streamline resource management in engineering organizations. It empowers teams to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔄 Assign engineers to projects and monitor workload  
+- 📊 Visualize capacity and utilization via interactive dashboards  
+- 🔐 Enforce secure, role-specific access for Admins, Managers, and Engineers  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This system was developed using modern technologies and enhanced through the support of **AI tools** including **ChatGPT**, **GitHub Copilot**, and **Grok (xAI)**—improving development speed, debugging, and documentation quality.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Key Features
 
-### `npm run build`
+- **🔍 Interactive Dashboards** – Visualize capacity using Chart.js  
+- **🔒 Role-Based Access** – RBAC for Admin, Manager, Engineer roles  
+- **📊 Capacity Tracking** – Monitor weekly availability and utilization  
+- **🗕️ Assignment Management** – Assign engineers to projects and hours  
+- **🔐 Secure Auth** – JWT-based authentication and hashed passwords
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Component        | Technologies                        |
+|------------------|-------------------------------------|
+| **Frontend**      | React, Tailwind CSS, Axios          |
+| **Backend**       | Node.js, Express, Sequelize         |
+| **Database**      | SQLite (for development)            |
+| **Authentication**| JWT, bcrypt                         |
+| **Charts**        | Chart.js                            |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js (v16+)
+- npm
+- Git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+erms-project/
+├── backend/        # Node.js server, APIs, DB models
+├── frontend/       # React app + Tailwind styling
+├── seed.js         # Seeds database with sample data
+└── README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### ① Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/rohith887/engineering_resource_management_system.git
+cd engineering_resource_management_system
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### ② Backend Setup
 
-### Making a Progressive Web App
+```bash
+cd backend
+npm install         # Install backend dependencies
+node seed.js        # Seed test data
+npm start           # Run backend server (http://localhost:3001)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### ③ Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+cd frontend
+npm install         # Install frontend dependencies
+npm run start       # Start React app (http://localhost:3000)
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### ④ Test User Credentials
 
-### `npm run build` fails to minify
+| Role     | Email                    | Password      |
+|----------|--------------------------|---------------|
+| Admin    | admin@example.com        | password123   |
+| Manager  | manager@example.com      | password123   |
+| Engineer | engineer@example.com     | password123   |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🎥 Live Demo
+
+### Local
+
+- Open `http://localhost:3000`
+- Log in with test users
+- Explore dashboards and role-based features
+
+> _Deploy URLs can be added here if hosted on platforms like Render/Vercel._
+
+---
+
+## 📸 Screenshots
+
+> _(Replace with actual screenshots)_
+
+- Login Page  
+- Dashboard with Capacity Chart  
+- Engineer Assignment View  
+
+---
+
+## 🤖 Use of AI Tools
+
+This project was built with the assistance of **Grok (xAI)**, **ChatGPT (OpenAI)**, and **GitHub Copilot** to streamline full-stack development.
+
+### 🧠 Contributions by AI:
+
+#### ✅ **Grok (xAI)**
+- Guided overall structure and database schema design
+- Provided Sequelize logic and model relationships
+- Helped resolve CORS and port mismatch issues
+
+#### 💡 **ChatGPT**
+- Generated middleware, RBAC logic, and secure JWT auth flows
+- Helped design assignment algorithms and dashboard logic
+- Assisted in writing this professional README
+
+#### 🤖 **GitHub Copilot**
+- Auto-completed repetitive boilerplate (e.g., routes, controller methods)
+- Accelerated component and form creation in React
+- Suggested improved error handling and API structures
+
+---
+
+## 🔮 Future Enhancements
+
+- 🧱 Role-specific dashboards (e.g., project tracking, availability alerts)
+- 🔐 Add logout and token refresh support
+- ☁️ Deploy using Vercel (frontend) and Render (backend)
+- ✅ Add testing suite using Jest and Supertest
+- 🗓️ Integrate a calendar view for scheduling
+
+---
+
+## 📜 License
+
+Licensed under the **MIT License** – see the `LICENSE` file for details.
+
+---
+
+## 👤 Author
+
+**Rohith Komatireddy**  
+🔗 GitHub: [rohith887](https://github.com/rohith887)  
+📧 Email: rohithkomatireddy051@gmail.com
+
+---
+
+🌟 **Found this project helpful? Please star the repo!**  
+💬 *Feedback and contributions are warmly welcomed.*
