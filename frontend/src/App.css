@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table {
+  @apply border-collapse w-full;
+}
+th, td {
+  @apply border p-2 text-left;
+}
+th {
+  @apply bg-gray-100;
+}
